@@ -1,0 +1,36 @@
+$main-background-color: #212121;
+$main-text-color: #ffffff;
+
+.main-container {
+    padding: 5vh 0;
+    min-height: 70vh;
+}
+
+.footer {
+    background-color: $main-background-color;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p {
+    color: $main-text-color;
+}
+
+body > .ui.nav-header {
+    border-radius: 0;
+}
+
+.header-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-recherche-item {
+    padding-top: 30px;
+}
