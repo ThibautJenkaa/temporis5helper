@@ -1,9 +1,59 @@
 $main-background-color: #212121;
+$main-background-second-color: #353535;
 $main-text-color: #ffffff;
 
 .main-container {
     padding: 5vh 0;
-    min-height: 70vh;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav {
+    padding: 5px;
+    height: 6vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $main-background-color;
+}
+
+nav ul {
+    padding: 0 15px;
+    color: $main-text-color;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+nav li {
+    border: 1px solid #3a3a3a;
+    background-color: $main-background-second-color;
+    padding: 1vh 10px;
+    border-radius: 5px;
+}
+
+nav i {
+    padding: 0 5px;
+    color: $main-text-color;
+}
+
+nav a {
+    color: $main-text-color;
+}
+
+.right-menu-nav {
+    margin-left: auto;
 }
 
 .footer {
@@ -15,22 +65,14 @@ $main-text-color: #ffffff;
     padding: 15px 0;
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 5vh;
 }
 
 .footer p {
     color: $main-text-color;
 }
 
-body > .ui.nav-header {
-    border-radius: 0;
-}
-
-.header-welcome {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.form-recherche-item {
-    padding-top: 30px;
+html p, html li, html input{
+    font-family: "Trebuchet MS";
 }

@@ -1,3 +1,47 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+$main-background-color: #212121;
+$main-background-second-color: #353535;
+$main-text-color: #ffffff;
+
+.header-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    font-family: "Trebuchet MS";
+    font-size: 40px;
+}
+
+.createur_site {
+    padding-top: 5px;
+    font-size: 20px;
+}
+
+.form-recherche-item {
+    padding-top: 10vh;
+}
+
+form .field {
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.field input, .field button {
+    height: 100%;
+}
+
+.field input {
+    font-size: 16px;
+    margin: 0 5px;
+    width: 40vw;
+    min-width: 400px;
+    border: 1px solid $main-background-color;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
