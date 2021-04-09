@@ -4,7 +4,13 @@
     <li><%= link_to "Accueil", root_path %></li>
   </ul>
   <ul class="right-menu-nav">
-    <li><%= link_to "Se connecter", login_path %></li>
-    <li><%= link_to "Inscrire un nouvel utilisateur", signup_path %></li>
+    <% if logged_in? %>
+      <li class="logout-link" ><%= link_to "Déconnexion", logout_path, method: :delete %></li>
+    <% else %>
+      <li><%= link_to "Se connecter", login_path %></li>
+    <% end %>
+    <% if logged_in? && current_user.admin %>
+      <li><%= link_to "Inscrire un nouvel utilisateur", signup_path %></li>
+    <% end %>
   </ul>
 </nav>

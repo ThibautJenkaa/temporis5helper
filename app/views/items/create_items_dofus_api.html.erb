@@ -1,0 +1,5 @@
+<% if @response.code == "200" %>
+    <p><%= @cpt_new_items %> nouveaux items insérés</p>
+<% else %>
+    <p>Erreur code <%= @response.code %> </p>
+<% end %>
