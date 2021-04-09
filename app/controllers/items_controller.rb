@@ -1,5 +1,13 @@
 class ItemsController < ApplicationController
-  before_action :is_admin?, only: [:create_items_dofus_api]
+  before_action :is_admin?, only: [:create_items_dofus_api, :index]
+
+  def index
+    
+  end
+
+  def search
+
+  end
 
   def create_items_dofus_api
 
